@@ -640,11 +640,9 @@ public class BackpackAbilities
 
     public void squidAbility(PlayerEntity player)
     {
-        if(player.isSubmergedInWater())
-        {
+        
             addTimedStatusEffect(player, StatusEffects.WATER_BREATHING, 210, 240, 0, false, false, true);
-            batAbility(player);
-        }
+            batAbility(player); 
     }
 
     //Utility methods
